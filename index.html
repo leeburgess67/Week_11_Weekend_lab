@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>//TODO App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="title" class="primary">What needs done?</label>
+          <input type="text" id="title" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="author" class="primary">Who's doing it?</label>
+          <input type="text" id="author" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="category" class="primary">When?</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="Today">Today</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="ASAP">ASAP</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <h1>//TODO</h1>
+    <div id="todo-list"></div>
+  </body>
+</html>
