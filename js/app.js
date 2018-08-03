@@ -37,10 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
   //Resets the form after each input
   form.reset();
 
-
+  // Make a delete button
   const deleteButton = document.querySelector("#button");
+
+  // Listen for the click
   deleteButton.addEventListener("click", () => {
-    console.dir(deleteButton);
     toDoList.innerHTML = '';
 });
 
