@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    //Assign Variables
+    //Assign Variables from form input ids
     const what = event.target.what.value;
     const who = event.target.who.value;
     const when = event.target.when.value;
