@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const whenToDo = event.target.when.value;
 
   //Create a new li element and assign to variable
-  const toDoItem = document.createElement("li");
+  const toDoItem = document.createElement("td");
 
   // Define the toDoItem text content using the variables set above
   toDoItem.textContent = `What: ${whatToDo}, Who: ${whoToDo}, When: ${whenToDo}`
@@ -43,6 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Listen for the click
   deleteButton.addEventListener("click", () => {
     toDoList.innerHTML = '';
+
+    const whoTable = document.querySelector('#who-table')
+    const whatTable = document.querySelector('#what-table')
+    const whenTable = document.querySelector('#when-table')
+    
 });
 
 });
