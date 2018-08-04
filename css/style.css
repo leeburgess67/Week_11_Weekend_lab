@@ -1,0 +1,12 @@
+body {
+    background-image: url('https://todogroup.org/img/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 2em;
+}
+
+#new-item-form {
+  box-sizing: border-box;
+}
